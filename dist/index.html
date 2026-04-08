@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arbutus&display=swap" rel="stylesheet">
+      <link rel="stylesheet" crossorigin href="/assets/index-BWHqFiC0.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="columns-align">
+                <h3>HOME</h3>
+                <p id = "home-score-el" class="number-display values-size-players center-number-score border-radius">0</p>
+                <div>
+                    <button onclick="sum1Points(team='home')" class="btn"> +1 </button>
+                    <button onclick="sum2Points(team='home')"class="btn"> +2 </button>
+                    <button onclick="sum3Points(team='home')" class="btn"> +3 </button>
+                </div>
+                <h3>FOULS</h3>
+                <div class="numberValue-button-aling">
+                <p  id ="home-foul-value" class="number-display values-size-fouls-period center-number-score border-radius">0</p>
+                <button onclick="sum1Points(team='home-foul')" class="btn"> +1 </button>
+                </div>
+            </div>
+            <div class="columns-align">
+                <p id ="timer-el" class="number-display center-number-score border-radius">00:00</p>
+                <div>
+                    <button onclick="startTimer()" class="btn">START</button>
+                    <button  onclick="stopTimer()" class ="btn">STOP</button>
+                </div>
+                <div id="period-section" class="numberValue-button-aling">
+                    <h3>PERIOD</h3>
+                    <p id ="period-value" class="number-display values-size-fouls-period center-number-score border-radius">0</p>
+                </div>
+                <button onclick="newGame()" class="btn">NEW GAME</button>
+            </div>
+            <div class="columns-align">
+                <h3>GUEST</h3>
+                <p id="guest-score-el"class="number-display values-size-players center-number-score border-radius">0</p>
+                <div>
+                    <button onclick="sum1Points(team='guest')" class="btn"> +1 </button>
+                    <button onclick="sum2Points(team='guest')" class="btn"> +2 </button>
+                    <button onclick="sum3Points(team='guest')" class="btn"> +3 </button>
+                </div>
+                <h3>FOULS</h3>
+                <div class="numberValue-button-aling">
+                    <button onclick="sum1Points(team='guest-foul')" class="btn"> +1 </button>
+                    <p id ="guest-foul-value" class="number-display values-size-fouls-period center-number-score border-radius">0</p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
